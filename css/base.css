@@ -1,13 +1,7 @@
 html {
-    /* csslint ignore:start */
-    /* The nav header is 3.5rem high, plus 20px for the margin-top of the
-       main container. */
     scroll-padding-top: calc(3.5rem + 20px);
-    /* csslint ignore:end */
 }
 
-/* Replacement for `body { background-attachment: fixed; }`, which has
-   performance issues when scrolling on large displays. See #1394. */
 body::before {
     content: ' ';
     position: fixed;
@@ -15,7 +9,7 @@ body::before {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #f8f8f8;
+    background-color: #f9ffa9;
     background: url(../img/grid.png) repeat-x;
     will-change: transform;
     z-index: -1;
@@ -42,7 +36,7 @@ body > .container {
     display: inline-block;
     padding: 4px;
     line-height: 1.428571429;
-    background-color: #fff;
+    background-color: #feffa5;
     border: 1px solid #ddd;
     border-radius: 4px;
     margin: 20px auto 30px auto;
@@ -65,7 +59,7 @@ hr {
 
 pre, .rst-content tt {
     max-width: 100%;
-    background: #fff;
+    background: #f9ffa4;
     border: solid 1px #e1e4e5;
     color: #333;
     overflow-x: auto;
